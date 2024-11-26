@@ -1,4 +1,3 @@
-
 # McAutoFishing 6TT
 
 ## Description
@@ -12,4 +11,10 @@
    Le script détecte également les dégâts infligés par les mobs pendant la pêche. Si un mob attaque le joueur, le script réagit immédiatement en simulant une pression sur la touche **ESC** pour arrêter le jeu et éviter que le joueur ne meure.
 
 ## Prérequis
-Avant de lancer le script, vous devez avoir installé **Python** et lancer le scripte installateur.
+Avant de lancer le script, vous devez avoir installé **Python** et les bibliothèques nécessaires en utilisant le script d'installation fourni.
+
+### Étapes d'installation :
+1. **Lancer Minecraft** en mode fenêtre.
+2. **Exécuter le script d'installation** pour télécharger et installer les dépendances nécessaires.
+3. Dans les **paramètres du jeu**, activez l'option **"Show Subtitles"** pour permettre au script de détecter les événements de pêche.
+4. Une fois le jeu lancé et les paramètres configurés, vous pouvez exécuter le script **McAutoFishing 6TT** pour commencer à pêcher automatiquement.
