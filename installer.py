@@ -17,6 +17,8 @@ def main():
     # Installation des packages requis
     install_package("pyautogui")
     install_package("Pillow")
+    install_package("opencv-python")
+    
 
     print("Toutes les dépendances sont installées.")
 
