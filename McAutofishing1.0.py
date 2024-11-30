@@ -6,7 +6,7 @@ import tkinter as tk
 from tkinter import ttk
 from PIL import Image, ImageTk  
 
-print("Script Minecraft pour Piocher, fait par Adrian")
+print("Minecraft Autofishing script made by klepek")
 print("GUI scale 3, Show subtitles")
 
 image_directory = os.path.join(os.path.expanduser("~"), "Images")
@@ -39,7 +39,7 @@ def main():
     main()
 
 def wejscie():
-    print("entree")
+    print("entry")
     time.sleep(5)
     pyautogui.rightClick()
 
@@ -47,7 +47,7 @@ def gigawedkadetector():
     global fish_count
     while not gigawedkaeng():
         time.sleep(0.1)
-    print("attrapeee bravooo noob")
+    print("catch")
     pyautogui.rightClick()
     fish_count += 1
     update_fish_count()
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         image_tk = None
 
    
-    fish_count_label = ttk.Label(root, text="Fiches attrapées : 0", font=("Helvetica", 14), background="white")
+    fish_count_label = ttk.Label(root, text="Fish catched : 0", font=("Helvetica", 14), background="white")
     fish_count_label.pack(pady=10)
 
     if image_tk:
@@ -108,11 +108,11 @@ if __name__ == "__main__":
         image_label.place(x=10, y=10)
 
     
-    alert_count = ttk.Label(root, text="Tu as été attaqué: 0", font=("Helvetica", 10), background="red")
+    alert_count = ttk.Label(root, text="You have been attacked: 0", font=("Helvetica", 10), background="red")
     alert_count.pack(pady=0)
 
    
-    start_button = ttk.Button(root, text="Démarrer le script", command=start_script)
+    start_button = ttk.Button(root, text="Start", command=start_script)
     start_button.pack(pady=10)
 
     
