@@ -39,12 +39,12 @@ def download_image(img_url, save_directory, file_name):
     else:
         print(f"Échec du téléchargement de l'image. Code de statut: {response.status_code} pour {img_url}")
 
-img_urls = ["https://i.imgur.com/sHnu0ry.png", "https://i.imgur.com/4oLkwIs.png", "https://i.imgur.com/n2TrFOP.png", "https://i.imgur.com/o4srJf8.png"]
+img_urls = ["https://i.imgur.com/sHnu0ry.png", "https://i.imgur.com/4oLkwIs.png", "https://i.imgur.com/n2TrFOP.png", "https://i.imgur.com/o4srJf8.png","https://i.imgur.com/67EBhtd.png"]
 
 save_directory = os.path.join(os.path.expanduser("~"), "Images")
 os.makedirs(save_directory, exist_ok=True)
 
-file_names = ["playerhurts.png", "gigawedka.png", "g.png", "safeQ.png"]
+file_names = ["playerhurts.png", "gigawedka.png", "g.png", "safeQ.png","1.png"]
 
 for img_url, file_name in zip(img_urls, file_names):
     download_image(img_url, save_directory, file_name)
