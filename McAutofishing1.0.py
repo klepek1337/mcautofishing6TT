@@ -148,6 +148,7 @@ if __name__ == "__main__":
         print(f"Error loading image: {e}")
         image_tk = None
 
+
     fish_count_label = ttk.Label(root, text="Fish catched : 0", font=("Helvetica", 14), background="white")
     fish_count_label.pack(pady=10)
 
@@ -156,11 +157,20 @@ if __name__ == "__main__":
         image_label.image = image_tk
         image_label.place(x=10, y=10)
 
+
     alert_count = ttk.Label(root, text="You have been attacked: 0", font=("Helvetica", 10), background="red")
     alert_count.pack(pady=0)
 
     # Dodanie przycisku z funkcją animacji
     start_button = ttk.Button(root, text="Start", command=start_script_with_feedback)
+
+    
+    alert_count = ttk.Label(root, text="You have been attacked: 0", font=("Helvetica", 10), background="red")
+    alert_count.pack(pady=0)
+
+   
+    start_button = ttk.Button(root, text="Start", command=start_script)
+
     start_button.pack(pady=10)
 
     fish_image_label = ttk.Label(root, background="black")
