@@ -11,10 +11,11 @@ print("Minecraft Autofishing script made by klepek")
 print("GUI scale 3, Show subtitles")
 
 image_directory = os.path.join(os.path.expanduser("~"), "Images")
-gigawedka_path = os.path.join(image_directory, "gigawedka.png")
-playerhurts_path = os.path.join(image_directory, "playerhurts.png")
+gigawedka_path = os.path.join(image_directory, "gigawedka1.png")
+playerhurts_path = os.path.join(image_directory, "playerhurts1.png")
 wedka_path = os.path.join(image_directory, "g.png")
 jeden_path = os.path.join(image_directory, "1.png")
+#giganigger
 
 fish_count = 0
 attack_count = 0
@@ -22,14 +23,14 @@ attack_count = 0
 
 def gigawedkaeng():
     try:
-        return pyautogui.locateOnScreen(gigawedka_path, confidence=0.8, grayscale=True) is not None
+        return pyautogui.locateOnScreen(gigawedka_path, confidence=0.5, grayscale=True) is not None
     except pyautogui.ImageNotFoundException:
         return False
 
 
 def megagigasusattackfromnigger():
     try:
-        return pyautogui.locateOnScreen(playerhurts_path, confidence=0.85, grayscale=True) is not None
+        return pyautogui.locateOnScreen(playerhurts_path, confidence=0.55, grayscale=True) is not None
     except pyautogui.ImageNotFoundException:
         return False
 
@@ -158,8 +159,6 @@ if __name__ == "__main__":
         image_label.place(x=10, y=10)
 
 
-    alert_count = ttk.Label(root, text="You have been attacked: 0", font=("Helvetica", 10), background="red")
-    alert_count.pack(pady=0)
 
     # Dodanie przycisku z funkcją animacji
     start_button = ttk.Button(root, text="Start", command=start_script_with_feedback)
