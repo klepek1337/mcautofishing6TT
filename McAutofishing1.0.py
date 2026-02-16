@@ -15,6 +15,7 @@ gigawedka_path = os.path.join(image_directory, "gigawedka1.png")
 playerhurts_path = os.path.join(image_directory, "playerhurts1.png")
 wedka_path = os.path.join(image_directory, "g.png")
 jeden_path = os.path.join(image_directory, "1.png")
+#chuj
 #giganigger
 
 fish_count = 0
